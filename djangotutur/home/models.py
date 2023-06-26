@@ -13,5 +13,5 @@ class Doctors (models.Model):
     doc_name = models.CharField(max_length=55)
     doc_spec =models.CharField(max_length=255)
     dep_name =models.ForeignKey(Departments,on_delete= models.CASCADE)
-    doc_image = models.ImageField(upload_to="doctors") 
+    doc_image = models.ImageField(upload_to="doctors/images/") 
      
